@@ -2,4 +2,4 @@ const express = require('express')
 const app = express()
 
 app.use(express.static('public'))
-app.listen(3000, () => console.log(`node app running`))
+app.listen(process.env.PORT || 8080, () => console.log('node app running'))
