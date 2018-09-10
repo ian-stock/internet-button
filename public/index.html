@@ -1,11 +1,38 @@
 <html>
     <head>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+        <script>
+                $(document).ready(function(){
+                    $("button").click(function(){
+                        $.post("/api",
+                        {
+                          name: "Donald Duck",
+                          city: "Duckburg"
+                        },
+                        function(data,status){
+                            //console.log("Data: " + JSON.stringify(data) + "\nStatus: " + status);
+                            $("#result").append("<br/>" + status + ": " + JSON.stringify(data));
+                        }, "json");
+                    });q
+                });
+        </script>
+
     </head>
     <body>
         <h1>Internet Button</h1>
-        device_id: <input type="text" name="devide_id" value="<yourname>"><br>
-        <button type="button" onclick="alert('1')">Button1</button><br>
-        <button type="button" onclick="alert('2')">Button1</button><br>
-        <button type="button" onclick="alert('3')">Button1</button><br>
+        device_id: <input type="text" name="device_id" value="<yourname>"><br>
+
+        <div class="container">
+            <img src="img/particle.jpg" alt="Internet Button" style="width:100%">
+            <button class="btn btn1"  >1</button>
+            <button class="btn btn2"  onclick="alert('2')">2</button>
+            <button class="btn btn3"  onclick="alert('3')">3</button>
+            <button class="btn btn4"  onclick="alert('4')">4</button>
+        </div>
+        <br>
+        <div id="result">no</div>
+        
     </body>
 </html>

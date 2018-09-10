@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/ian-stock/internet-button#readme",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "body-parser": "1.8*"
   }
 }
