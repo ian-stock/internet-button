@@ -1,9 +1,14 @@
 .container {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 500px;
 }
 
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 100%;
+    }
+}
 .container img {
     width: 100%;
     height: auto;

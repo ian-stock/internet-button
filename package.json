@@ -1,7 +1,7 @@
 {
   "name": "internet-button",
   "version": "1.0.0",
-  "description": "",
+  "description": "internet-button simulator",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/ian-stock/internet-button#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "body-parser": "1.8.3"
+    "body-parser": "1.8.3",
+    "request": "2.88.0"
   }
 }
