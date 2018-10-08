@@ -10,7 +10,7 @@ app.listen(process.env.PORT || 8080, () => console.log('node app running'))
 
 
 app.post('/api', function(req, res){
-    var msurl = 'http://particlephotonintegration-wyct.us-e2.cloudhub.io/eventpub';
+    var msurl = 'http://particlephotonintegration-txek.us-e2.cloudhub.io/eventpub';
     request({
         url: msurl,
         method: "POST",
